@@ -1,0 +1,5 @@
+#!/bin/bash
+# This is a Nagios plugin to send SMS via a free service textbelt.com
+# Of course this will not work if your internet is down.
+ curl http://textbelt.com/text -d number=REPLACEWITHPHONENUMBER -d "message=$1"
+
